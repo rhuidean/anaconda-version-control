@@ -1,0 +1,17 @@
+Download and Install Anaconda Python 3.6
+->https://www.continuum.io/downloads#windows
+
+Open Conda Prompt and create a new conda virtual environment
+$ conda create --name wcd-ml python=3.5
+
+Go to the lab folder, activate virtual env and install updates
+$ activate wcd-ml
+$ conda env update -f wcd-ml-requirements-win.yml
+
+Launch jupyter notebook in browser
+$ pip install ipykernel
+$ python -m ipykernel install --user --name wcd-ml -display-name "Python 3.5 (wcd-ml)"
+$ jupyter notebook
+
+Deactivate Conda Vitural Environment
+$ deactivate
